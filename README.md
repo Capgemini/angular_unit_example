@@ -65,6 +65,5 @@ or
 grunt report
 ```
 
-Read more at:
-http://eslint.org/
-https://www.smashingmagazine.com/2015/09/eslint-the-next-generation-javascript-linter/
+Read more at: http://eslint.org/
+and https://www.smashingmagazine.com/2015/09/eslint-the-next-generation-javascript-linter/
