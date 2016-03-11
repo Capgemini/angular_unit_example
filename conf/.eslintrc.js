@@ -1,7 +1,4 @@
 module.exports = {
-  // 0: disable the rule completely
-  // 1: enable the rule as a warning
-  // 2: enable the rule as an error
   "extends": ["eslint:recommended"],
   "env": {
     "browser": true,
@@ -10,6 +7,11 @@ module.exports = {
   "globals": {
     "angular": true
   },
+
+  // Rule values:
+  // 0: disable the rule completely
+  // 1: enable the rule as a warning
+  // 2: enable the rule as an error
   "rules": {
     // Strict mode:
     "strict": [1, "function"],
