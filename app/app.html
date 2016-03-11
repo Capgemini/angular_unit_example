@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angular Unit Example</title>
+    <link rel="stylesheet" href="app.css" media="screen" title="Default" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Angular Unit Example</h1>
+      <div
+        class="ng-cloak"
+        data-ng-app="exampleApp">
+        <div data-ng-include="'main/main.view.html'"></div>
+      </div>
+    </div>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="main/main.js"></script>
+    <script src="main/services/utility.service.js"></script>
+    <script src="main/services/vehicles.service.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<div data-ng-controller="MainController as main">
+  <h2>Main</h2>
+
+  <ul>
+    <li data-ng-repeat="vehicle in main.vehicles.list">
+      {{ vehicle.name }} : {{ vehicle.type }}
+    </li>
+  </ul>
+
+  <button
+    type="button"
+    data-ng-click="main.thinkClick()">
+    think!
+  </button>
+</div>
