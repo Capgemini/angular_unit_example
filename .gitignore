@@ -1,0 +1,12 @@
+[Tt]humbs.db
+.Trashes
+.DS_Store
+.DS_Store?
+__*
+.tmp
+tmp
+docs
+node_modules
+npm-debug.log
+bower_components
+test/report
