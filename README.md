@@ -67,7 +67,8 @@ $ grunt report
 Read more at: http://eslint.org/
 and https://www.smashingmagazine.com/2015/09/eslint-the-next-generation-javascript-linter/
 
-Next steps
-----------
+Next steps after getting this example working
+---------------------------------------------
 * Only a few unit tests have been illustrated, so explore adding tests for features of angular that have not yet been included, such as: Filters, Directives, Promises et cetera.
 * Look into using Protractor to add e2e tests.
+* Take a look at: https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
