@@ -10,11 +10,21 @@ angular
   .controller('MainController', ['vehicles', function (vehicles) {
     'use strict';
 
+    var that = this;
+
     this.vehicles = vehicles;
+    this.callToAction = 'Choose!';
+    this.callToActionClick = function () {
+      var
+        rand,
+        index;
 
-    this.thinkClick = function () {
-      // console.log('THINK!');
+      // Generate a number between 0 (inclusive) and 1 (exclusive).
+      rand = Math.random();
+
+      index = Math.floor(rand * vehicles.list.length);
+
+      that.choice = vehicles.list[index].name;
     };
-
     this.things = ['one', 'two', 'three'];
   }]);

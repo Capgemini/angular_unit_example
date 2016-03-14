@@ -9,7 +9,9 @@
 
   <button
     type="button"
-    data-ng-click="main.thinkClick()">
-    think!
+    data-ng-click="main.callToActionClick()">
+    {{ main.callToAction }}
   </button>
+
+  <div class="choice" data-ng-bind="main.choice"></div>
 </div>

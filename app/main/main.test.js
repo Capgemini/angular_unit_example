@@ -34,7 +34,7 @@ describe('Controller: MainController', function() {
     });
 
     it('should have thinkClick handler available on load', function() {
-      expect(typeof ctrl.thinkClick).toEqual('function');
+      expect(typeof ctrl.callToActionClick).toEqual('function');
     });
   });
 });

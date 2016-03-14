@@ -21,3 +21,7 @@ button {
   width: 60em;
   margin: 0 auto;
 }
+.choice {
+  padding: 1em;
+  color: rgb(0, 80, 255);
+}
