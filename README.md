@@ -18,6 +18,8 @@ $ npm install
 ```
 This will install grunt, and allow you to start using grunt tasks.
 
+Look in `package.json` to see how the npm installation has been configured.
+
 Development
 -----------
 To view the app use a server to serve `angular_example/app/app.html` and view it in a browser.
@@ -25,10 +27,11 @@ To view the app use a server to serve `angular_example/app/app.html` and view it
 ### Testing
 Each JavaScript file to be unit tested has a sibling of the same name with .test.js suffix containing the unit tests for it.
 By default `grunt` will run these unit̨ tests.
-To get a better picture that includes a test of the coverage use:
+To get a better picture that also includes a report of the coverage use:
 ```
 $ grunt report
 ```
+Look in `gruntfile.js` to see how the report task has been configured.
 
 Read more about unit testing with Karma & Jasmine at
 https://docs.angularjs.org/guide/unit-testing
