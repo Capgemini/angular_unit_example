@@ -15,6 +15,11 @@
   function MainController (vehicles) {
     var that = this;
 
+    this.vehicles = vehicles;
+    this.callToActionLabel = 'Choose!';
+    this.callToActionClick = callToAction;
+    this.things = ['one', 'two', 'three'];
+
     function callToAction () {
       var
         rand,
@@ -27,10 +32,5 @@
 
       that.choice = vehicles.list[index].name;
     }
-
-    this.vehicles = vehicles;
-    this.callToActionLabel = 'Choose!';
-    this.callToActionClick = callToAction;
-    this.things = ['one', 'two', 'three'];
   }
 })();
