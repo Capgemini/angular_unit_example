@@ -10,6 +10,12 @@ body {
 button {
   padding: 0.5em;
   font-size: 1em;
+  cursor: pointer;
+  border: 1px solid rgb(0, 80, 255);
+  border-radius: 0.5em;
+  background-color: rgb(0, 160, 255);
+  color: #fff;
+  letter-spacing: 1pt;
 }
 .wrapper {
   width: 60em;
