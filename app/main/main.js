@@ -10,7 +10,9 @@
    **/
   angular
     .module('exampleApp')
-    .controller('MainController', ['vehicles', MainController]);
+    .controller('MainController', MainController);
+
+  MainController.$inject = ['vehicles'];
 
   function MainController (vehicles) {
     var that = this;

@@ -9,7 +9,9 @@
    */
   angular
     .module('exampleApp')
-    .factory('vehicles', ['utility', vehicles]);
+    .factory('vehicles', vehicles);
+
+  vehicles.$inject = ['utility'];
 
   function vehicles (utility) {
     var vehicles = {
