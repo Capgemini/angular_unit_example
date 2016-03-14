@@ -33,7 +33,7 @@ describe('Controller: MainController', function() {
       expect(typeof ctrl.vehicles).toEqual('object');
     });
 
-    it('should have thinkClick handler available on load', function() {
+    it('should have callToActionClick handler available on load', function() {
       expect(typeof ctrl.callToActionClick).toEqual('function');
     });
   });
