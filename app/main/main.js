@@ -13,7 +13,6 @@ angular
     var that = this;
 
     this.vehicles = vehicles;
-    this.callToAction = 'Choose!';
     this.callToActionClick = function () {
       var
         rand,
@@ -26,5 +25,6 @@ angular
 
       that.choice = vehicles.list[index].name;
     };
+    this.callToActionLabel = 'Choose!';
     this.things = ['one', 'two', 'three'];
   }]);
