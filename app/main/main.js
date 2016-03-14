@@ -1,19 +1,21 @@
-/**
- * @ngdoc     controller
- * @name      exampleApp.controller:MainController
- * @requires  {object}  vehicles  The vehicles service
- * @description
- *   The Main Controller.
- **/
-angular
-  .module('exampleApp')
-  .controller('MainController', ['vehicles', function (vehicles) {
-    'use strict';
+(function() {
+  'use strict';
 
+  /**
+   * @ngdoc     controller
+   * @name      exampleApp.controller:MainController
+   * @requires  {object}  vehicles  The vehicles service
+   * @description
+   *   The Main Controller.
+   **/
+  angular
+    .module('exampleApp')
+    .controller('MainController', ['vehicles', MainController]);
+
+  function MainController (vehicles) {
     var that = this;
 
-    this.vehicles = vehicles;
-    this.callToActionClick = function () {
+    function callToAction () {
       var
         rand,
         index;
@@ -24,7 +26,11 @@ angular
       index = Math.floor(rand * vehicles.list.length);
 
       that.choice = vehicles.list[index].name;
-    };
+    }
+
+    this.vehicles = vehicles;
     this.callToActionLabel = 'Choose!';
+    this.callToActionClick = callToAction;
     this.things = ['one', 'two', 'three'];
-  }]);
+  }
+})();

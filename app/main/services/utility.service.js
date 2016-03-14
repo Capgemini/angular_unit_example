@@ -1,15 +1,18 @@
-/**
-* @ngdoc service
-* @name exampleApp.service:utility
-* @description
-*   Provides a collection of generic utility functions for use throughout
-*   the app.
-*/
-angular
-  .module('exampleApp')
-  .factory('utility', [function () {
-    'use strict';
+(function() {
+  'use strict';
 
+  /**
+   * @ngdoc service
+   * @name exampleApp.service:utility
+   * @description
+   *   Provides a collection of generic utility functions for use throughout
+   *   the app.
+   */
+  angular
+    .module('exampleApp')
+    .factory('utility', utility);
+
+  function utility () {
     var utility;
 
     utility = {
@@ -55,4 +58,5 @@ angular
     };
 
     return utility;
-  }]);
+  }
+})();

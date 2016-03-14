@@ -1,14 +1,17 @@
-/**
- * @ngdoc service
- * @name exampleApp.service:vehicles
- * @description
- *   Service providing the vehicles model.
- */
-angular
-  .module('exampleApp')
-  .factory('vehicles', ['utility', function (utility) {
-    'use strict';
+(function() {
+  'use strict';
 
+  /**
+   * @ngdoc service
+   * @name exampleApp.service:vehicles
+   * @description
+   *   Service providing the vehicles model.
+   */
+  angular
+    .module('exampleApp')
+    .factory('vehicles', ['utility', vehicles]);
+
+  function vehicles (utility) {
     var vehicles = {
       list : [
         {
@@ -44,4 +47,5 @@ angular
     };
 
     return vehicles;
-  }]);
+  }
+})();
