@@ -20,6 +20,8 @@
        * @ngdoc method
        * @name increasingOrderSort
        * @methodOf exampleApp.service:utility
+       * @description
+       *   Provides an array sort function that organises numbers into increasing order.
        *
        * @param {number}  a Number to be sorted.
        * @param {number}  b Number to be sorted.
@@ -33,6 +35,8 @@
        * @ngdoc method
        * @name decreasingOrderSort
        * @methodOf exampleApp.service:utility
+       * @description
+       *   Provides an array sort function that organises numbers into decreasing order.
        *
        * @param {number}  a Number to be sorted.
        * @param {number}  b Number to be sorted.
