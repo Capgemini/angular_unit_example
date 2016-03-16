@@ -14,28 +14,43 @@
   vehicles.$inject = ['utility'];
 
   function vehicles (utility) {
+    var list = [
+      {
+        name : 'McLaren F1',
+        type : 'car',
+        colour : 'yellow'
+      },
+      {
+        name : 'Royal Enfield',
+        type : 'motorcycle',
+        colour : 'red'
+      },
+      {
+        name : 'Tata Nano',
+        type : 'car',
+        colour : 'blue'
+      }
+    ];
+
     var vehicles = {
-      list : [
-        {
-          name : 'McLaren F1',
-          type : 'car',
-          colour : 'yellow'
-        },
-        {
-          name : 'Royal Enfield',
-          type : 'motorcycle',
-          colour : 'red'
-        },
-        {
-          name : 'Tata Nano',
-          type : 'car',
-          colour : 'blue'
-        }
-      ]
+      add: add,
+      getList: getList
     };
 
-    vehicles.add = function (vehicle) {
+    return vehicles;
 
+    /*****/
+
+    /**
+     * @ngdoc method
+     * @name add
+     * @methodOf exampleApp.service:vehicles
+     * @description
+     *   Adds the passed vehicle to the list of vehicles.
+     *
+     * @param {object} vehicle The vehicle to be added.
+     */
+    function add (vehicle) {
       // Only add a vehicle if it has a Name.
       // Type and Colour are optional.
       if (vehicle.name) {
@@ -44,10 +59,18 @@
         vehicle.name = utility.capitalize(vehicle.name);
 
         // Add to the list of vehicles.
-        vehicles.list.push(vehicle);
+        list.push(vehicle);
       }
-    };
+    }
 
-    return vehicles;
+    /**
+     * @ngdoc method
+     * @name getList
+     * @methodOf exampleApp.service:vehicles
+     * @returns {Array} The list of vehicles.
+     */
+    function getList() {
+      return list;
+    }
   }
 })();

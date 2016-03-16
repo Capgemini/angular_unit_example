@@ -15,12 +15,12 @@
   MainController.$inject = ['vehicles'];
 
   function MainController (vehicles) {
-    var that = this;
+    var vm = this;
 
-    this.vehicles = vehicles;
-    this.callToActionLabel = 'Choose!';
-    this.callToActionClick = callToAction;
-    this.things = ['one', 'two', 'three'];
+    vm.vehicles = vehicles;
+    vm.callToActionLabel = 'Choose!';
+    vm.callToActionClick = callToAction;
+    vm.things = ['One', 'Two', 'Three'];
 
     function callToAction () {
       var
@@ -30,9 +30,9 @@
       // Generate a number between 0 (inclusive) and 1 (exclusive).
       rand = Math.random();
 
-      index = Math.floor(rand * vehicles.list.length);
+      index = Math.floor(rand * vehicles.getList().length);
 
-      that.choice = vehicles.list[index].name;
+      vm.choice = vehicles.getList()[index].name;
     }
   }
 })();

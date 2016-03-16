@@ -36,6 +36,6 @@ module.exports = {
     // Stylistic choices you may wish to change to match the project:
     "camelcase": 2,
     "indent": [2, 2],
-    "linebreak-style": [2, "unix"],
+    "linebreak-style": [2, "unix"]
   }
 };
