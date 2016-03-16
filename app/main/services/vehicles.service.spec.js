@@ -6,11 +6,9 @@ describe("Vehicles Service", function () {
   // Instantiate a new version of the module before each test.
   beforeEach(angular.mock.module('exampleApp'));
 
-  beforeEach(function () {
-    inject(function(_vehicles_) {
-      vehicles = _vehicles_;
-    });
-  });
+  beforeEach(inject(function(_vehicles_) {
+    vehicles = _vehicles_;
+  }));
 
   describe("test provision", function () {
     it('should have a working vehicles service', function () {
@@ -20,7 +18,7 @@ describe("Vehicles Service", function () {
 
   describe("test list model", function () {
     it('should provide a list with 3 items in', function () {
-      expect(vehicles.list.length).toEqual(3);
+      expect(vehicles.getList().length).toEqual(3);
     });
   });
 
@@ -31,9 +29,9 @@ describe("Vehicles Service", function () {
           name : "name"
         };
 
-        expect(vehicles.list.length).toEqual(3);
+        expect(vehicles.getList().length).toEqual(3);
         vehicles.add(addition);
-        expect(vehicles.list.length).toEqual(4);
+        expect(vehicles.getList().length).toEqual(4);
       });
 
       it('should not add a vehicle without a name to the list', function () {
@@ -42,9 +40,9 @@ describe("Vehicles Service", function () {
           colour : "COLOUR"
         };
 
-        expect(vehicles.list.length).toEqual(3);
+        expect(vehicles.getList().length).toEqual(3);
         vehicles.add(addition);
-        expect(vehicles.list.length).toEqual(3);
+        expect(vehicles.getList().length).toEqual(3);
       });
 
       it('should ensure that vehicle names start with a capital letter', function () {
@@ -58,7 +56,7 @@ describe("Vehicles Service", function () {
         vehicles.add(addition);
 
         // Get the vehicle that has just been added.
-        addedVehicle = vehicles.list[vehicles.list.length - 1];
+        addedVehicle = vehicles.getList()[vehicles.getList().length - 1];
 
         expect(addedVehicle.name).toEqual(expected);
       });

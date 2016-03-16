@@ -3,14 +3,14 @@
   "description": "Angular Unit Example",
   "license": "MIT",
   "version": "0.0.1",
+  "author": "Capgemini",
   "repository": {
     "type": "git",
     "url": "https://github.com/Capgemini/angular_unit_example.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Use 'grunt report' to run tests\" && exit 1"
   },
-  "author": "Capgemini",
   "devDependencies": {
     "angular-mocks": "^1.5.0",
     "eslint": "^2.3.0",
