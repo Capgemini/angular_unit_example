@@ -53,7 +53,7 @@ To write comments that will be processed by ngDocs start a jsdoc / docblock styl
 https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation
 
 ### Linting
-Linting settings have been defined in `.eslintrc.yaml`
+Linting settings have been defined in `conf/.eslintrc.js`
 
 To run eslint use:
 ```
