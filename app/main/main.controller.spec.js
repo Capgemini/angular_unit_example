@@ -48,7 +48,7 @@ describe('Controller: MainController', function() {
       vehicleList = ctrl.vehicles.getList();
       validCarName = false;
 
-      // check that the choice is a valid car name
+      // Check that the choice is a valid car name.
       vehicleListLength = vehicleList.length;
       for (i = 0; i < vehicleListLength; i++) {
         if (vehicleList[i].name === ctrl.choice) {
