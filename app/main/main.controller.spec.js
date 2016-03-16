@@ -9,7 +9,7 @@ describe('Controller: MainController', function() {
   // This will run before each it() below.
   beforeEach(inject(function(_$controller_){
     // The injector unwraps the underscores (_) from around the parameter names when matching.
-    $controller = _$controller_;
+    var $controller = _$controller_;
     ctrl = $controller('MainController');
   }));
 
