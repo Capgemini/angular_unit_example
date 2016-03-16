@@ -17,7 +17,7 @@ module.exports = {
     "strict": [1, "function"],
 
     // Good practice:
-    "brace-style": 1,
+    "brace-style": [1, "stroustrup"],
     "curly": 2,
     "eqeqeq": 1,
     "no-multiple-empty-lines": 2,
