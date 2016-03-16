@@ -2,7 +2,7 @@
   <h2>Main</h2>
 
   <ul>
-    <li data-ng-repeat="vehicle in main.vehicles.list">
+    <li data-ng-repeat="vehicle in main.vehicles.getList()">
       {{ vehicle.name }} : {{ vehicle.type }}
     </li>
   </ul>
