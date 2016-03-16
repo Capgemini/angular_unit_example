@@ -14,7 +14,11 @@
   vehicles.$inject = ['utility'];
 
   function vehicles (utility) {
-    var list = [
+    var
+      list,
+      vehicles;
+
+    list = [
       {
         name : 'McLaren F1',
         type : 'car',
@@ -32,7 +36,7 @@
       }
     ];
 
-    var vehicles = {
+    vehicles = {
       add: add,
       getList: getList
     };
@@ -67,7 +71,7 @@
      * @ngdoc method
      * @name getList
      * @methodOf exampleApp.service:vehicles
-     * @returns {Array} The list of vehicles.
+     * @returns {array} The list of vehicles.
      */
     function getList() {
       return list;
