@@ -11,9 +11,9 @@ describe('Utility Service', function () {
   }));
 
   describe("test Utility Service provision", function () {
-    it('should have a working utility service', inject(['utility', function (utility) {
+    it('should have a working utility service', function (utility) {
       expect(typeof utility).toEqual('object');
-    }]));
+    });
   });
 
   describe("test Utility Service's method:", function () {
