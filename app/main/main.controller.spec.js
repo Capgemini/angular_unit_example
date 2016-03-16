@@ -1,5 +1,4 @@
 describe('Controller: MainController', function() {
-
   var ctrl;
 
   // Instantiate a new version of the module before each test.
@@ -34,18 +33,25 @@ describe('Controller: MainController', function() {
 
   describe('methods', function () {
     it('callToActionClick should randomise car choice', function () {
+      var 
+        i,
+        vehicleList,
+        vehicleListLength,
+        validCarName;
+        
       expect(ctrl.choice).toBeUndefined();
 
       ctrl.callToActionClick();
 
       expect(ctrl.choice).toBeDefined();
 
-      var vehicleList = ctrl.vehicles.getList();
-      var validCarName = false;
+      vehicleList = ctrl.vehicles.getList();
+      validCarName = false;
 
       // check that the choice is a valid car name
-      for(var i = 0; i < vehicleList.length; i++) {
-        if(vehicleList[i].name === ctrl.choice) {
+      vehicleListLength = vehicleList.length;
+      for (i = 0; i < vehicleListLength; i++) {
+        if (vehicleList[i].name === ctrl.choice) {
           validCarName = true;
           break;
         }
