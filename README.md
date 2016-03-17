@@ -1,5 +1,5 @@
-An example Angular application with Unit Testing
-================================================
+Starting Unit Testing with Angular
+==================================
 The aim of this project is to help you get started with unit testing an Angular app, and using a task runner.  It tries to provide just enough for you to start playing and learning, and has been kept deliberately small with the hope of making this easier.  The task runner provides a few tasks to help you while developing, including a coverage report, generating documentation, linting and running unit tests.
 
 The task runner being used is Grunt, and Karma & Jasmine 2.0 are used for the unit testing.  The version of Angular is 1.x.
